@@ -1,26 +1,33 @@
 import React from 'react';
-import logo from './logo.svg';
+import Elf from './Elf.js';
+import CodeTable from './CodeTable.js';
 import './App.css';
+import StyleData from './StyleData.js'
 
-function App() {
-  return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
-  );
+class App extends React.Component {
+  state = {
+    currentPage: 'head',
+    style: {
+      StyleData
+    }
+  }
+
+  updateStyles = (style) => {
+    this.setState({ style })
+  }
+
+  render() {
+    const { currentPage, style } = this.state
+    return (
+      <div className="App">
+        <Elf className="Elf" />
+        <CodeTable
+          currentPage={currentPage}
+          style={style}
+        />
+      </div>
+    );
+  }
 }
 
 export default App;
