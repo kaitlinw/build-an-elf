@@ -2,10 +2,10 @@
 
 A build an elf game for kids to learn how to code with basic CSS. (Can also be used by adults!)
 
--> Build an elf from scratch via a walkthrough.
--> See it transform live on your screen!
--> Give the elf a name!
--> and send the elf off in a Christmas Card to your family and friends!
+- Build an elf from scratch via a walkthrough.
+- See it transform live on your screen!
+- Give the elf a name!
+- and send the elf off in a Christmas Card to your family and friends!
 
 
 
