@@ -9,7 +9,7 @@ A build an elf game for kids to learn how to code with basic CSS. (Can also be u
 
 <img src="./src/elf.png"
      alt="elf"
-     height="200" />
+     height="400" />
 
 #### Tools used
 - button styling: [Creative Button Styles by Mary Lou - codrops](https://tympanus.net/Development/CreativeButtons/)
