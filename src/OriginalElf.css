@@ -23,11 +23,12 @@
 
 }
 
-.pom-pom{
-    /* background-color: white;
+.pom {
+    background-color: white;
+    /* border: 1px solid grey; */
     border-radius: 50%;
     height: 50px;
-    width: 50px; */
+    width: 50px;
     margin-bottom: -20px;
 
 }
@@ -37,37 +38,35 @@
     border-radius: 50% 50% 50% 50% / 100% 100% 30% 30%;
     border-style: solid;
     border-width: 0 90px 130px 90px;
-    border-color: transparent transparent transparent transparent;
-    /* border-bottom-color: green; */
+    border-color: transparent transparent green transparent;
 }
 
 .hat-band {
-    /* height: 40px;
-    width: 200px; */
-    /* background-color: white; */
+    height: 40px;
+    width: 200px;
+    background-color: white;
     /* border: 1px solid grey; */
     margin-top: -20px;
     margin-bottom: -20px;
-    /* border-radius: 90px; */
+    border-radius: 90px;
 }
 
 .hair {
-    /* height: 200px;
+    height: 200px;
     width: 200px;
-    background-color: brown; */
+    background-color: brown;
     margin-bottom: -170px;
-    margin-top: 20%;
-    /* border-radius: 50% 50% 50% 50% / 60% 60% 40% 40%; */
-    /* border-radius: 50%; */
+    border-radius: 50% 50% 50% 50% / 60% 60% 40% 40%;
+    border-radius: 50%;
 }
 
 
 .head {
-    /* width: 190px;
+    width: 190px;
     height: 200px;
     background-color: orange; 
-    border-radius: 50%; */
-    /* border-radius: 50% 50% 50% 50% / 60% 60% 40% 40%; */
+    border-radius: 50%;
+    border-radius: 50% 50% 50% 50% / 60% 60% 40% 40%;
     
 }
 
@@ -87,25 +86,26 @@
     display: flex;
     justify-content: space-between;
     width: 100px;
+    /* border: 1px solid black; */
     margin-top: 15px
 
 }
 
 .eye {
     display: flex;
-    /* background-color:white;
+    background-color:white;
     width: 30px;
     height: 30px;
-    border-radius: 50%; */
+    border-radius: 50%;
     justify-content: center;
     align-items: flex-end;
 }
 
 .pupil {
-    /* width: 20px;
+    width: 20px;
     height: 20px;
     background-color: black;
-    border-radius: 50%; */
+    border-radius: 50%;
 
 }
 
@@ -115,18 +115,16 @@
     border-style: inset;
     border-style: solid;
     border-width: 12px 0 12px 20px;
-    /* border-left-width: 30px; */
-    border-color: transparent transparent transparent transparent;
-    /* border-left-color: orangered; */
+    border-color: transparent transparent transparent orangered;
 }
 
 .mouth {
-    /* height: 45px;
+    height: 45px;
     width: 90px;
     background-color: red;
     margin-top: 17px;
     border-bottom-left-radius: 90px;
-    border-bottom-right-radius: 90px; */
+    border-bottom-right-radius: 90px;
     
 }
 
@@ -136,55 +134,55 @@
 }
 .body {
     display: flex;
-    /* height: 260px;
+    height: 260px;
     width: 200px;
     background-color: green;
-    border-radius: 36em 36em 50em 50em; */
+    border-radius: 36em 36em 50em 50em;
 
 }
 
 .arm {
     display: flex;
     flex-direction: column-reverse;
-    /* height: 220px;
+    height: 220px;
     width: 50px;
     background-color: green;
-    border-radius: 100px; */
+    border-radius: 100px;
 
 }
 
 .left-arm {
-    /* transform: rotate(42deg); */
+    transform: rotate(42deg);
     
 }
 
 .right-arm {
-    /* transform: rotate(-42deg); */
+    transform: rotate(-42deg);
     
 }
 
 
 .hand {
-    /* width: 50px;
+    width: 50px;
     height: 50px;
     border-radius: 50%;
-    background-color: orange; */
+    background-color: orange;
 }
 
 
 
 .belt {
-    /* margin-top: 120px;
+    margin-top: 120px;
     height: 38px;
     width: 200px;
-    background-color: rgb(25, 25, 25); */
+    background-color: rgb(25, 25, 25);
 }
 
 .buckle {
-    /* border: 10px solid gold;
+    border: 10px solid gold;
     width: 40px;
     min-height: 38px;
-    margin: auto; */
+    margin: auto;
 }
 
 .legs {
@@ -196,18 +194,18 @@
 }
 
 .leg {
-    /* width: 40px;
+    width: 40px;
     height: 200px;
-    background-color: green; */
+    background-color: green;
     
 }
 
 .feet {
-    /* height: 50px;
+    height: 50px;
     width: 90px;
     background-color: rgb(25, 25, 25);
     border-radius: 40em;
-    margin-top: -20px; */
+    margin-top: -20px;
 
 }
 
@@ -228,9 +226,9 @@
 }
 
 
-/* .shadow {
+.shadow {
     -webkit-box-shadow: 18px 18px 13px -13px rgba(0,0,0,0.13);
 -moz-box-shadow: 18px 18px 13px -13px rgba(0,0,0,0.13);
 box-shadow: 18px 18px 13px -13px rgba(0,0,0,0.13);
-} */
+}
 
