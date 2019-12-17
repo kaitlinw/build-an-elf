@@ -17,7 +17,7 @@ export default function CodeTable({ currentStep, styles, updateStyles, updateCur
                     elfStylePropNames.map((stylePropName, i) =>
                         <p key={i}>
                             {stylePropName}:
-                            <input className={stylePropName} onChange={(event) => updateStyles(event.target.className, event.target.value)} placeholder={elfStyles[stylePropName]} type='text' />;
+                            <input className={stylePropName} onChange={(event) => updateStyles(event.target.className, event.target.value)} onLoad={input.value = ""} placeholder={elfStyles[stylePropName]} type='text' />;
                         </p>
                     )
                 }

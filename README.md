@@ -7,9 +7,12 @@ A build an elf game for kids to learn how to code with basic CSS. (Can also be u
 - Give the elf a name!
 - and send the elf off in a Christmas Card to your family and friends!
 
+<img src="./src/elf.png"
+     alt="Markdown Monster icon"
+     style="max-height: 400px;" />
 
 #### Tools used
-button styling: [Creative Button Styles by Mary Lou - codrops](https://tympanus.net/Development/CreativeButtons/)
+- button styling: [Creative Button Styles by Mary Lou - codrops](https://tympanus.net/Development/CreativeButtons/)
 
 - Lodash CloneDeep
 
