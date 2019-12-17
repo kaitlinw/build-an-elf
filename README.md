@@ -9,7 +9,7 @@ A build an elf game for kids to learn how to code with basic CSS. (Can also be u
 
 <img src="./src/elf.png"
      alt="Markdown Monster icon"
-     style="max-height: 400px;" />
+     style="max-height: 200px;" />
 
 #### Tools used
 - button styling: [Creative Button Styles by Mary Lou - codrops](https://tympanus.net/Development/CreativeButtons/)
