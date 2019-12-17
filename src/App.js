@@ -46,7 +46,7 @@ class App extends React.Component {
       currentStep = steps[steps.indexOf(currentStep) + 1] || currentStep
       console.log("next")
 
-    } else if (direction == 'back') {
+    } else if (direction === 'back') {
       currentStep = steps[steps.indexOf(currentStep) - 1] || currentStep
       console.log("back")
     }
@@ -57,7 +57,6 @@ class App extends React.Component {
 
   render() {
     const { currentStep, elfStyles } = this.state
-
     return (
       <div className="App">
         <Elf
