@@ -43,14 +43,14 @@ var StyleData = {
     },
     'nose': {
         default: {
-            marginTop: '10px',
             borderLeftColor: 'orangered',
-            borderLeftWidth: '20px'
+            borderLeftWidth: '20px',
+            marginTop: '10px'
         },
         actual: {
-            marginTop: '',
             borderLeftColor: '',
-            borderLeftWidth: ''
+            borderLeftWidth: '',
+            marginTop: ''
         }
     },
     'mouth': {
@@ -76,7 +76,7 @@ var StyleData = {
             backgroundColor: 'green',
             width: '200px',
             height: '260px',
-            borderRadius: '50%'
+            borderRadius: '50em'
         },
         actual: {
             backgroundColor: '',
@@ -174,10 +174,10 @@ var StyleData = {
     },
     'hand': {
         default: {
+            backgroundColor: 'orange',
             width: '50px',
             height: '50px',
-            borderRadius: '50%',
-            backgroundColor: 'orange'
+            borderRadius: '50%'
         },
         actual: {
             width: '',

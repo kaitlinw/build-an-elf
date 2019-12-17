@@ -7,9 +7,11 @@
     display: flex;
     flex-direction: column;
     align-items: center;
+    justify-content: center;
     width: 50vw;
     height: 100vh;
     background-color: darkslateblue;
+    /* padding: 20%; */
 }
 
 .hat {
@@ -56,7 +58,6 @@
     width: 200px;
     background-color: brown; */
     margin-bottom: -170px;
-    margin-top: 20%;
     /* border-radius: 50% 50% 50% 50% / 60% 60% 40% 40%; */
     /* border-radius: 50%; */
 }
@@ -110,7 +111,7 @@
 }
 
 .nose {
-    margin-top: 10px;
+    /* margin-top: 10px; */
     -webkit-transform:rotate(360deg);
     border-style: inset;
     border-style: solid;
@@ -140,7 +141,7 @@
     width: 200px;
     background-color: green;
     border-radius: 36em 36em 50em 50em; */
-
+    /* border-radius: 50em; */
 }
 
 .arm {

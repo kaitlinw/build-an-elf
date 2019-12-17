@@ -41,7 +41,7 @@ class App extends React.Component {
   }
 
   updateCurrentStep = (currentStep, direction) => {
-    var steps = ['head', 'eye', 'pupil', 'nose', 'mouth', 'body', 'belt', 'buckle', 'leg', 'feet', 'arm', 'left-arm', 'right-arm', 'hand', 'hair', 'hat-head', 'pom-pom', 'hat-band']
+    var steps = ['head', 'eye', 'pupil', 'nose', 'mouth', 'body', 'belt', 'buckle', 'leg', 'feet', 'arm', 'left-arm', 'right-arm', 'hand', 'hair', 'hat-head', 'pom-pom', 'hat-band', 'completed']
     if (direction === 'next') {
       currentStep = steps[steps.indexOf(currentStep) + 1] || currentStep
       console.log("next")

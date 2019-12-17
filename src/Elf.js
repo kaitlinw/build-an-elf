@@ -6,13 +6,13 @@ export default function Elf({ styles }) {
     return (
         <div className="elf" >
             <div className="hat">
-                <div className="pom-pom"></div>
-                <div className="hat-head"></div>
-                <div className="hat-band shadow"></div>
+                <div className="pom-pom" style={styles["pom-pom"].actual}></div>
+                <div className="hat-head" style={styles["hat-head"].actual}></div>
+                <div className="hat-band shadow" style={styles["hat-band"].actual}></div>
 
             </div>
 
-            <div className="hair shadow"></div>
+            <div className="hair shadow" style={styles["hair"].actual}></div>
             <div className="head shadow" style={styles["head"].actual}>
                 <div className="face">
                     <div className="eyes">
@@ -29,7 +29,7 @@ export default function Elf({ styles }) {
                 </div>
             </div>
             <div className="middle">
-                <div className="left-arm arm" style={styles["arm"].actual}>
+                <div className="left-arm arm" style={Object.assign({}, styles["arm"].actual, styles["left-arm"].actual)}>
                     <div className="hand shadow" style={styles["hand"].actual}></div>
                 </div>
 
@@ -40,7 +40,7 @@ export default function Elf({ styles }) {
                         </div>
                     </div>
                 </div>
-                <div className="right-arm arm " style={styles["arm"].actual}>
+                <div className="right-arm arm" style={Object.assign({}, styles["arm"].actual, styles["right-arm"].actual)}>
                     <div className="hand shadow" style={styles["hand"].actual}></div>
                 </div>
             </div>
