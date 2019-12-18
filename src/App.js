@@ -4,6 +4,13 @@ import CodeTable from './CodeTable.js';
 import './App.css';
 import StyleData from './StyleData.js'
 import { cloneDeep } from 'lodash';
+import CheckPoint from './Checkpoint.js';
+import Completed from './Completed.js';
+import Card from './Card.js';
+import Share from './Share.js';
+import Home from './Home.js';
+
+import { Switch, Route, Link } from 'react-router-dom';
 
 class App extends React.Component {
   state = {
@@ -12,26 +19,26 @@ class App extends React.Component {
   }
 
   componentDidUpdate() {
-    this.saveToLocalStorage(this.state.elfStyles)
+    let { currentStep, elfStyles } = this.state
+    this.saveToLocalStorage({ currentStep, elfStyles })
   }
 
   saveToLocalStorage = (elfStyles) => {
     const newStyles = JSON.stringify(elfStyles)
     localStorage.setItem('elfStyle', newStyles)
   }
+
   getFromLocalStorage = () => {
     const stringData = localStorage.getItem('elfStyle')
     if (stringData) {
-      const elfStyles = JSON.parse(stringData)
-      this.setState({ elfStyles: elfStyles })
+      const elfStyle = JSON.parse(stringData)
+      this.setState({ elfStyles: elfStyle })
     }
   }
 
   toHtmlDashCase = (string) => {
     return string.replace(/([a-z])([A-Z])/g, '$1-$2').toLowerCase()
   }
-
-
 
   updateElfStyles = (targetStyle, inputValue) => {
     let { currentStep, elfStyles } = cloneDeep(this.state)
@@ -41,7 +48,7 @@ class App extends React.Component {
   }
 
   updateCurrentStep = (currentStep, direction) => {
-    var steps = ['head', 'eye', 'pupil', 'nose', 'mouth', 'body', 'belt', 'buckle', 'leg', 'feet', 'arm', 'left-arm', 'right-arm', 'hand', 'hair', 'hat-head', 'pom-pom', 'hat-band', 'completed']
+    var steps = ['home', 'head', 'checkpoint', 'eye', 'pupil', 'nose', 'mouth', 'checkpoint', 'body', 'belt', 'buckle', 'checkpoint', 'leg', 'feet', 'checkpoint', 'arm', 'left-arm', 'right-arm', 'hand', 'checkpoint', 'hair', 'hat-head', 'pom-pom', 'hat-band', 'completed', 'card', 'share']
     if (direction === 'next') {
       currentStep = steps[steps.indexOf(currentStep) + 1] || currentStep
       console.log("next")
@@ -50,29 +57,55 @@ class App extends React.Component {
       currentStep = steps[steps.indexOf(currentStep) - 1] || currentStep
       console.log("back")
     }
-
     this.setState({ currentStep })
+  }
+
+  showHome = (currentStep) => {
 
   }
+
+
+
+
 
   render() {
     const { currentStep, elfStyles } = this.state
     return (
       <div className="App">
-        <Elf
-          className="Elf"
-          styles={elfStyles}
-          currentStep={currentStep}
-        />
-        <CodeTable
-          currentStep={currentStep}
-          styles={elfStyles}
-          updateStyles={this.updateElfStyles}
-          updateCurrentStep={this.updateCurrentStep}
-        />
-      </div>
-    );
-  }
-}
 
-export default App;
+        <Route path="/home" exact>
+          <Home />
+        </Route>
+        <Route path="/build" exact>
+          <div className="container">
+            <Elf
+              className="Elf"
+              styles={elfStyles}
+              currentStep={currentStep}
+            />
+            <CodeTable
+              currentStep={currentStep}
+              styles={elfStyles}
+              updateStyles={this.updateElfStyles}
+              updateCurrentStep={this.updateCurrentStep}
+            />
+          </div>
+          <Route />
+          <Route path="/checkpoint">
+            <CheckPoint />
+          </Route>
+          <Route path="/completed">
+            <Completed />
+          </Route>
+          <Route path="/card">
+            <Card />
+          </Route>
+          <Route path="/share">
+            <Share />
+          </Route>
+      </div>
+        );
+      }
+    }
+    
+    export default App;
