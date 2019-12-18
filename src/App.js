@@ -70,13 +70,16 @@ class App extends React.Component {
 
   render() {
     const { currentStep, elfStyles } = this.state
+
     return (
       <div className="App">
 
         <Route path="/home" exact>
           <Home />
         </Route>
+
         <Route path="/build" exact>
+
           <div className="container">
             <Elf
               className="Elf"
@@ -90,22 +93,28 @@ class App extends React.Component {
               updateCurrentStep={this.updateCurrentStep}
             />
           </div>
-          <Route />
-          <Route path="/checkpoint">
-            <CheckPoint />
-          </Route>
-          <Route path="/completed">
-            <Completed />
-          </Route>
-          <Route path="/card">
-            <Card />
-          </Route>
-          <Route path="/share">
-            <Share />
-          </Route>
+
+        </Route>
+
+        <Route path="/checkpoint">
+          <CheckPoint />
+        </Route>
+
+        <Route path="/completed">
+          <Completed />
+        </Route>
+
+        <Route path="/card">
+          <Card />
+        </Route>
+
+        <Route path="/share">
+          <Share />
+        </Route>
+
       </div>
-        );
-      }
-    }
-    
-    export default App;
+    )
+  }
+}
+
+export default App;
