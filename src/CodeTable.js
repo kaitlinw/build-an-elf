@@ -36,9 +36,7 @@ export default function CodeTable({ stepIndex, updateStyles, elfStyles, updateCu
 
                 <h3 className="code-wrap">&#125;</h3>
             </div>
-
-            <button onClick={() => updateCurrentStep(-1)} className="back btn btn-2 btn-2g">Back</button>
-            <button onClick={() => updateCurrentStep(1)} className="next btn btn-2 btn-2g">Next</button>
+            
         </div >
     )
 }

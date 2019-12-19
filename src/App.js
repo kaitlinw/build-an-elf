@@ -8,6 +8,9 @@ import BuildMode from './BuildMode.js';
 import { Switch, Route, Link, Redirect } from 'react-router-dom';
 import { styleData, steps, cardData } from './styleData.js';
 import { cloneDeep } from 'lodash';
+import Completed from './Completed.js';
+import Share from './Share.js';
+import Card from './BuildCard.js';
 
 
 class App extends React.Component {
@@ -75,17 +78,18 @@ class App extends React.Component {
     const { elfStyles, stepIndex } = this.state
     return (
       <div className="App">
-        <NavBar removeFromLocalStorage={this.removeFromLocalStorage} />
+        <NavBar />
+        {/* <NavBar removeFromLocalStorage={this.removeFromLocalStorage} /> */}
         <Route path='/' exact render={() =>
           <Redirect to='/home' />
         } />
 
+
         <Route path='/home' exact render={() =>
           <Home
-            removeFromLocalStorage={this.removeFromLocalStorage}
+          // removeFromLocalStorage={this.removeFromLocalStorage}
           />
         } />
-
 
 
         <Route path='/build' exact render={() =>
@@ -100,6 +104,9 @@ class App extends React.Component {
         <Route path='/instructions' exact component={HowToPlay} />
 
         <Route path='/about' exact component={About} />
+        <Route path='/completed' exact component={Completed} />
+        <Route path='/share' exact component={Share} />
+        <Route path='/card' exact component={Card} />
 
       </div>
     )

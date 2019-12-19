@@ -12,6 +12,7 @@ import { Switch, Route, Link } from 'react-router-dom';
 
 function BuildMode({ stepIndex, elfStyles, updateElfStyles, updateCurrentStep }) {
     let currentStep = steps[stepIndex]
+
     if (currentStep.includes('checkpoint')) {
         return (
             <div className="container">
@@ -23,8 +24,55 @@ function BuildMode({ stepIndex, elfStyles, updateElfStyles, updateCurrentStep })
                     updateCurrentStep={updateCurrentStep}
                     elfStyles={elfStyles}
                 />
+                <div className="buttons">
+                    <button onClick={() => updateCurrentStep(-1)} className="back btn btn-2 btn-2g">Back</button>
+                    <button onClick={() => updateCurrentStep(1)} className="next btn btn-2 btn-2g">Next</button>
+                </div>
             </div>
 
+        )
+    }
+
+    if (currentStep === 'completed-elf') {
+        return (
+            <div className="container">
+                <Elf
+                    className="Elf"
+                    styles={elfStyles}
+                />
+                <Completed
+                    updateCurrentStep={this.updateCurrentStep}
+                />
+
+            </div>
+        )
+    } else if (currentStep === 'card') {
+        return (
+            <div className="container">
+                <Elf
+                    className="Elf"
+                    styles={elfStyles}
+                />
+                <Card
+                    updateCurrentStep={this.updateCurrentStep}
+                />
+
+            </div>
+
+        )
+    } else if (currentStep === 'share') {
+        return (
+            <div className="container">
+                <Elf
+                    className="Elf"
+                    styles={elfStyles}
+                />
+                <Share
+                    stepIndex={stepIndex}
+                    updateCurrentStep={this.updateCurrentStep}
+                />
+
+            </div>
         )
     }
     return (
@@ -45,42 +93,3 @@ function BuildMode({ stepIndex, elfStyles, updateElfStyles, updateCurrentStep })
 
 export default BuildMode;
 
-
-
-// } else if (steps[stepIndex] === 'completed') {
-//     return (
-//         <div className="container">
-//             <Elf
-//                 className="Elf"
-//                 styles={elfStyles}
-//             />
-//             <Completed />
-//         </div>
-//     )
-// }
-// else if (steps[stepIndex] === 'card') {
-//     return (
-//         <div className="container">
-//             <Elf
-//                 className="Elf"
-//                 styles={elfStyles}
-//             />
-//             <Card
-//                 stepIndex={stepIndex}
-//                 updateCurrentStep={this.updateCurrentStep}
-//             />
-//         </div>
-
-//     )
-
-// else if (steps[stepIndex] === 'share') {
-//     return (
-//         <div className="container">
-//             <Elf
-//                 className="Elf"
-//                 styles={elfStyles}
-//             />
-//             <Share />
-//         </div>
-//     )
-// }

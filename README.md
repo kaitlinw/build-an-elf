@@ -14,6 +14,8 @@ A build an elf game for kids to learn how to code with basic CSS. (Can also be u
 #### Tools used
 - button styling: [Creative Button Styles by Mary Lou - codrops](https://tympanus.net/Development/CreativeButtons/)
 - Font shadow design [Design Shack](https://designshack.net/articles/css/12-fun-css-text-shadows-you-can-copy-and-paste/)
+- SnowFall [SnowFall](https://github.com/cahilfoley/react-snowfall)
+
 - Lodash CloneDeep
 
 ## React

@@ -275,7 +275,7 @@ export var styleData = {
         message: "Hmm... looks more like a fried egg yolk to me!",
         nextStepMessage: "Let's build the face!"
     },
-    'make-card': {
+    'build-card': {
         exclamation: "Hooray!",
         section: "arms",
         message: "Hmm... looks more like a fried egg yolk to me!",

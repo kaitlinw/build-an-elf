@@ -10,8 +10,10 @@ export default function Home({ removeFromLocalStorage }) {
                 <Snowfall />
             </div>
             <h1>Build An Elf!</h1>
-            <Link onClick={() => removeFromLocalStorage()} className="btn btn-2 btn-2g" to="/build">Let's start!</Link>
+            <Link className="btn btn-2 btn-2g" to="/build">Let's start!</Link>
         </div>
 
     )
 }
+
+// onClick={() => removeFromLocalStorage()}

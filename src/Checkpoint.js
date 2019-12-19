@@ -15,9 +15,10 @@ export default function CheckPoint({ stepIndex, elfStyles, updateCurrentStep }) 
             <h2>{elfStyles[currentStep].message}</h2>
             <p>{elfStyles[currentStep].nextStepMessage}</p>
 
-            <button onClick={() => updateCurrentStep(stepIndex, -1)} className="back btn btn-2 btn-2g">Back</button>
-
-            <button onClick={() => updateCurrentStep(stepIndex, 1)} className="next btn btn-2 btn-2g">Next</button>
+            <div className="buttons">
+                <button onClick={() => updateCurrentStep(-1)} className="back btn btn-2 btn-2g">Back</button>
+                <button onClick={() => updateCurrentStep(1)} className="next btn btn-2 btn-2g">Next</button>
+            </div>
         </div>
     )
 

@@ -4,16 +4,29 @@
     align-items: center;
     flex-direction: column;
     height: 100vh;
-}
-
-p {
+    width: 100vw;
     
+
 }
 
 input {
     min-width: 350px;
+    background-color: transparent;
+    border: 2px solid white;
+    border-radius: 0.12em;
 }
 
 .large-input {
     min-width: 500px;
+    
+}.snow {
+    z-index: -1;
+    position: absolute;
+    width: 100vw;
+    height: 100vh;
+    background-color: darkgreen;
+}
+
+.card h1, p {
+    margin: 4vh;
 }
