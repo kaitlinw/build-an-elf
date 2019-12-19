@@ -9,9 +9,20 @@ A build an elf game for kids to learn how to code with basic CSS. (Can also be u
 - Give the elf a name!
 - and send the elf off in a Christmas Card to your family and friends!
 
-<img src="./src/elf.png"
+<img src="./public/elf.png"
      alt="elf"
      height="400" />
+<img src="./public/face.png"
+     alt="elf face"
+     height="400" />
+<img src="./public/buildbody.png"
+    alt="build body screen"
+    height="400" />
+<img src="./public/card.png"
+    alt="xmas card"
+    height="400" />
+
+Please also see the build an elf presentation!
 
 #### Tools used
 - button styling: [Creative Button Styles by Mary Lou - codrops](https://tympanus.net/Development/CreativeButtons/)
