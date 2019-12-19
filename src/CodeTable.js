@@ -1,13 +1,18 @@
 import React from 'react';
 import './CodeTable.css';
 import toHtmlDashCase from './helpers.js';
+import { steps } from './styleData';
+import CheckPoint from './Checkpoint';
 
-export default function CodeTable({ currentStep, styles, updateStyles, updateCurrentStep }) {
+export default function CodeTable({ stepIndex, updateStyles, elfStyles, updateCurrentStep }) {
+    const currentStep = steps[stepIndex]
+    let stepStyles = elfStyles[currentStep] // || elfStyles[steps[stepIndex - 1]]
 
-    let elfStyles = styles[currentStep].default
-    let elfStylesActual = styles[currentStep].actual
-    let elfStylePropNames = Object.keys(elfStyles)
-    let elfStyleProps = elfStylePropNames.map(style => toHtmlDashCase(style))
+    let defaultStyles = stepStyles.default
+    let actualStyles = stepStyles.actual
+
+    const styleNamesCamelCase = Object.keys(defaultStyles)
+    let styleNamesDashCase = styleNamesCamelCase.map(style => toHtmlDashCase(style))
     return (
         <div className="CodeTable">
             <div className="headers">
@@ -18,11 +23,13 @@ export default function CodeTable({ currentStep, styles, updateStyles, updateCur
             <div className="render-code">
                 <h3 className="code-wrap">.{currentStep} &#123;</h3>
                 {
-                    elfStyleProps.map((stylePropName, i) =>
+                    styleNamesDashCase.map((styleName, i) =>
                         <p key={i}>
-                            {stylePropName}:
-                            <input className={stylePropName} onChange={(event) => updateStyles(event.target.className, event.target.value)} placeholder={elfStyles[stylePropName]}
-                                value={elfStylesActual[stylePropName]} type='text' />;
+                            {styleName}:
+                            <input className={styleName} onChange={(event) => updateStyles(event.target.className, event.target.value)} placeholder={defaultStyles[styleNamesCamelCase[i]]}
+                                defaultValue={actualStyles[styleNamesCamelCase[i]]}
+                                type='text' />;
+                                
                         </p>
                     )
                 }
@@ -30,8 +37,8 @@ export default function CodeTable({ currentStep, styles, updateStyles, updateCur
                 <h3 className="code-wrap">&#125;</h3>
             </div>
 
-            <button onClick={() => updateCurrentStep(currentStep, -1)} className="back btn btn-2 btn-2g">Back</button>
-            <button onClick={() => updateCurrentStep(currentStep, 1)} className="next btn btn-2 btn-2g">Next</button>
+            <button onClick={() => updateCurrentStep(-1)} className="back btn btn-2 btn-2g">Back</button>
+            <button onClick={() => updateCurrentStep(1)} className="next btn btn-2 btn-2g">Next</button>
         </div >
     )
 }

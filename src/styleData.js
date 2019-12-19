@@ -1,8 +1,5 @@
-var steps = ['head', 'head-checkpoint', 'eye', 'pupil', 'nose', 'mouth', 'face-checkpoint', 'body', 'belt', 'buckle', 'body-checkpoint', 'leg', 'feet', 'legs-checkpoint', 'arm', 'left-arm', 'right-arm', 'hand', 'arms-checkpoint', 'hair', 'hat-head', 'pom-pom4', 'hat-band', 'completed-elf', 'make-card', 'share']
 
-var cardData = {}
-
-var styleData = {
+export var styleData = {
     'head': {
         default: {
             backgroundColor: 'orange',
@@ -16,6 +13,12 @@ var styleData = {
             height: '',
             borderRadius: ''
         }
+    },
+    'checkpoint-1': {
+        exclamation: "Hooray!",
+        section: "head",
+        message: "Hmm... looks more like a fried egg yolk to me!",
+        nextStepMessage: "Let's build the face!"
     },
     'eye': {
         default: {
@@ -75,6 +78,12 @@ var styleData = {
             marginTop: ''
         }
     },
+    'checkpoint-2': {
+        exclamation: "Hooray!",
+        section: "face",
+        message: "Hmm... looks more like a fried egg yolk to me!",
+        nextStepMessage: "Let's build the face!"
+    },
     'body': {
         default: {
             backgroundColor: 'green',
@@ -118,6 +127,12 @@ var styleData = {
             margin: ''
         }
     },
+    'checkpoint-3': {
+        exclamation: "Hooray!",
+        section: "body",
+        message: "Hmm... looks more like a fried egg yolk to me!",
+        nextStepMessage: "Let's build the face!"
+    },
     'leg': {
         default: {
             backgroundColor: 'green',
@@ -145,6 +160,12 @@ var styleData = {
             borderRadius: '',
             marginTop: ''
         }
+    },
+    'checkpoint-4': {
+        exclamation: "Hooray!",
+        section: "legs",
+        message: "Hmm... looks more like a fried egg yolk to me!",
+        nextStepMessage: "Let's build the face!"
     },
     'arm': {
         default: {
@@ -189,6 +210,12 @@ var styleData = {
             borderRadius: '',
             backgroundColor: ''
         }
+    },
+    'checkpoint-5': {
+        exclamation: "Hooray!",
+        section: "arms",
+        message: "Hmm... looks more like a fried egg yolk to me!",
+        nextStepMessage: "Let's build the face!"
     },
     'hair': {
         default: {
@@ -242,13 +269,31 @@ var styleData = {
             borderRadius: ''
         }
     },
-
-
-
-
-
+    'completed-elf': {
+        exclamation: "Hooray!",
+        section: "arms",
+        message: "Hmm... looks more like a fried egg yolk to me!",
+        nextStepMessage: "Let's build the face!"
+    },
+    'make-card': {
+        exclamation: "Hooray!",
+        section: "arms",
+        message: "Hmm... looks more like a fried egg yolk to me!",
+        nextStepMessage: "Let's build the face!"
+    },
+    'share': {
+        exclamation: "Hooray!",
+        section: "arms",
+        message: "Hmm... looks more like a fried egg yolk to me!",
+        nextStepMessage: "Let's build the face!"
+    },
 }
 
-export default styleData;
-export { styleData, steps, cardData };
+export var steps = Object.keys(styleData)
 
+
+export var cardData = {}
+
+
+
+// export var steps = ['head', 'checkpoint', 'eye', 'pupil', 'nose', 'mouth', 'checkpoint', 'body', 'belt', 'buckle', 'checkpoint', 'leg', 'feet', 'checkpoint', 'arm', 'left-arm', 'right-arm', 'hand', 'checkpoint', 'hair', 'hat-head', 'pom-pom', 'hat-band', 'completed-elf', 'make-card', 'share']

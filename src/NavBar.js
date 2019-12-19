@@ -1,7 +1,7 @@
 import React from 'react';
 import './NavBar.css';
 import { Link } from 'react-router-dom';
-export default function NavBar() {
+export default function NavBar({ removeFromLocalStorage }) {
     return (
         <div className="nav-bar">
             <nav>
@@ -10,12 +10,7 @@ export default function NavBar() {
                         <Link to="/home">Home</Link>
                     </li>
                     <li>
-                        <Link to={{
-                            pathname: "/build", state: {
-                                currentStep: "head"
-                            }
-                        }} > Start</Link>
-
+                        <Link onClick={() => removeFromLocalStorage()} to='/build'>Start</Link>
                     </li>
                     <li>
                         <Link to="/instructions">How To Play</Link>
