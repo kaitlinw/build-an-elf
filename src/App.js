@@ -106,8 +106,12 @@ class App extends React.Component {
         <Route path='/about' exact component={About} />
         <Route path='/completed' exact component={Completed} />
         <Route path='/share' exact component={Share} />
-        <Route path='/card' exact component={Card} />
-
+        <Route path='/card' exact render={() =>
+          <Card
+            elfStyles={elfStyles}
+            updateCurrentStep={this.updateCurrentStep}
+          />
+        } />
       </div>
     )
   }

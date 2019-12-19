@@ -5,20 +5,29 @@
     flex-direction: column;
     height: 100vh;
     width: 100vw;
-    
 
 }
+.row {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+}
+
+/* .buttons {
+    float: inline-end;
+} */
 
 input {
     min-width: 350px;
     background-color: transparent;
-    border: 2px solid white;
+    border: 2px solid #E6E7E8;
     border-radius: 0.12em;
+    padding: 10px 5px;
 }
 
 .large-input {
     min-width: 500px;
-    
+
 }.snow {
     z-index: -1;
     position: absolute;
@@ -28,5 +37,25 @@ input {
 }
 
 .card h1, p {
-    margin: 4vh;
+    margin: 5vh;
 }
+
+::placeholder { /* Chrome, Firefox, Opera, Safari 10.1+ */
+    color: lightgrey;
+    font-size: 25px;
+    opacity: 1; /* Firefox */
+  }
+  
+  :-ms-input-placeholder { /* Internet Explorer 10-11 */
+    color: lightgrey;
+  }
+  
+  ::-ms-input-placeholder { /* Microsoft Edge */
+    color: lightgrey;
+  }
+
+  .elf > * {
+    max-width: 30vw;
+    background-color:
+  }
+

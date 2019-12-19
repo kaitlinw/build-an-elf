@@ -5,10 +5,12 @@
     background-color: white;
     color: black;
     margin: 10%;
+    text-align: left;
 }
 
 input {
     height: 35px;
     width: 200px;
     font-size: 25px;
+    border-color: lightgrey;
 }

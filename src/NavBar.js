@@ -10,7 +10,7 @@ export default function NavBar({ removeFromLocalStorage }) {
                         <Link to="/home">Home</Link>
                     </li>
                     <li>
-                        <Link onClick={() => removeFromLocalStorage()} to='/build'>Start</Link>
+                        <Link to='/build'>Start</Link>
                     </li>
                     <li>
                         <Link to="/instructions">How To Play</Link>
@@ -23,3 +23,5 @@ export default function NavBar({ removeFromLocalStorage }) {
         </div>
     )
 }
+
+// onClick = {() => removeFromLocalStorage()}

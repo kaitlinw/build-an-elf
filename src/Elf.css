@@ -9,10 +9,9 @@
     align-items: center;
     justify-content: center;
     width: 50vw;
-    min-height: 100vh;
-    
+    height: 80vh;
     background-color: darkslateblue;
-    /* padding: 20%; */
+    border-radius: 50em;
 }
 
 .hat {

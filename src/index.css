@@ -10,6 +10,8 @@ body {
     sans-serif;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
+
+  
 }
 
 code {
@@ -25,9 +27,7 @@ p {
   font-size: 30px;
 }
 
-h2,
-h3,
-h4,
+
 ul {
   margin: 0;
   padding: 0;

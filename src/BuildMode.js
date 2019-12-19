@@ -1,5 +1,5 @@
 import React from 'react';
-import './BuildCard.css';
+import './BuildMode.css';
 import { styleData, steps, cardData } from './styleData.js';
 import Elf from './Elf.js';
 import CheckPoint from './Checkpoint.js';
@@ -18,16 +18,14 @@ function BuildMode({ stepIndex, elfStyles, updateElfStyles, updateCurrentStep })
             <div className="container">
                 <Elf
                     elfStyles={elfStyles}
+
                 />
                 <CheckPoint
                     stepIndex={stepIndex}
                     updateCurrentStep={updateCurrentStep}
                     elfStyles={elfStyles}
                 />
-                <div className="buttons">
-                    <button onClick={() => updateCurrentStep(-1)} className="back btn btn-2 btn-2g">Back</button>
-                    <button onClick={() => updateCurrentStep(1)} className="next btn btn-2 btn-2g">Next</button>
-                </div>
+
             </div>
 
         )
