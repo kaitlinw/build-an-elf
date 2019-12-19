@@ -12,6 +12,9 @@ A build an elf game for kids to learn how to code with basic CSS. (Can also be u
 <img src="./public/elf.png"
      alt="elf"
      height="400" />
+     <img src="./public/homescreen.png"
+     alt="home page"
+     height="400" />
 <img src="./public/face.png"
      alt="elf face"
      height="400" />
