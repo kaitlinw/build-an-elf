@@ -1,7 +1,12 @@
 # Build An Elf!
 Build an elf [here!](https://concerned-farmer.surge.sh)
 
+Completely built in React, this was my first React Project build in less that a week.
 
+I decided to make a fun game in light of Christmas Approaching that made it simple for kids to learn coding...and maybe even adults too!
+
+
+## About
 A build an elf game for kids to learn how to code with basic CSS. (Can also be used by adults!)
 
 - Build an elf from scratch via a walkthrough.
@@ -42,6 +47,10 @@ Please also see the build an elf presentation!
 
 - css2canvas will be used to capture the xmas card.
 - SendGrid to be used for the emailing of card function.
+
+
+
+
 
 
 
