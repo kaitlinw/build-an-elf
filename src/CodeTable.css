@@ -4,7 +4,7 @@
     max-height: 100vh;
     background-color: white;
     color: black;
-    margin: 10%;
+    margin: 2% 8%;
     text-align: left;
 }
 
@@ -13,4 +13,12 @@ input {
     width: 200px;
     font-size: 25px;
     border-color: lightgrey;
+}
+
+.render-code {
+    width: 700px;
+}
+
+.code-workshop {
+    font-size: 65px;
 }

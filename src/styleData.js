@@ -18,7 +18,7 @@ export var styleData = {
         exclamation: "Hooray!",
         section: "head",
         message: "Hmm... looks more like a fried egg yolk to me!",
-        nextStepMessage: "Let's build the face!"
+        nextStepMessage: "Let's build my face!"
     },
     'eye': {
         default: {
@@ -79,10 +79,10 @@ export var styleData = {
         }
     },
     'checkpoint-2': {
-        exclamation: "Hooray!",
+        exclamation: "Hello World!",
         section: "face",
-        message: "Hmm... looks more like a fried egg yolk to me!",
-        nextStepMessage: "Let's build the face!"
+        message: "Hey There! I am more than just a pretty face!",
+        nextStepMessage: "Let's build my body!"
     },
     'body': {
         default: {
@@ -128,10 +128,10 @@ export var styleData = {
         }
     },
     'checkpoint-3': {
-        exclamation: "Hooray!",
+        exclamation: "Alright!",
         section: "body",
-        message: "Hmm... looks more like a fried egg yolk to me!",
-        nextStepMessage: "Let's build the face!"
+        message: "But I need some legs for dancing... I mean, moving gifts!",
+        nextStepMessage: "Let's build my legs!"
     },
     'leg': {
         default: {
@@ -162,10 +162,10 @@ export var styleData = {
         }
     },
     'checkpoint-4': {
-        exclamation: "Hooray!",
+        exclamation: "Yipee!",
         section: "legs",
-        message: "Hmm... looks more like a fried egg yolk to me!",
-        nextStepMessage: "Let's build the face!"
+        message: "Alright! Now I can dance! But I'll need some arms if I am going to carry any gifts!",
+        nextStepMessage: "Let's build my arms!"
     },
     'arm': {
         default: {
@@ -212,10 +212,10 @@ export var styleData = {
         }
     },
     'checkpoint-5': {
-        exclamation: "Hooray!",
+        exclamation: "Great!",
         section: "arms",
-        message: "Hmm... looks more like a fried egg yolk to me!",
-        nextStepMessage: "Let's build the face!"
+        message: "Great! I'm almost ready to go! I still need some hair and a hat if I want to look the part!",
+        nextStepMessage: "Let's build my hair and hat!"
     },
     'hair': {
         default: {
@@ -270,23 +270,22 @@ export var styleData = {
         }
     },
     'completed-elf': {
-        exclamation: "Hooray!",
+        exclamation: "I'm ready to go!",
         section: "arms",
-        message: "Hmm... looks more like a fried egg yolk to me!",
-        nextStepMessage: "Let's build the face!"
+        message: "Check me out! Wow I look good.",
+        nextStepMessage: "Alright, time to put me into a Christmas card so you can show me off to your friends and family!"
     },
     'build-card': {
-        exclamation: "Hooray!",
-        section: "arms",
-        message: "Hmm... looks more like a fried egg yolk to me!",
-        nextStepMessage: "Let's build the face!"
+        name: "",
+        yourMessage: "",
+        message: "",
+        yourName: "",
+        elfName: ""
     },
     'share': {
-        exclamation: "Hooray!",
-        section: "arms",
-        message: "Hmm... looks more like a fried egg yolk to me!",
-        nextStepMessage: "Let's build the face!"
-    },
+        exclamation: "Merry Christmas!",
+        message: "Send me to your family and friends!"
+    }
 }
 
 export var steps = Object.keys(styleData)

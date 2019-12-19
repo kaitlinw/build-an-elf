@@ -39,7 +39,7 @@ function BuildMode({ stepIndex, elfStyles, updateElfStyles, updateCurrentStep })
                     styles={elfStyles}
                 />
                 <Completed
-                    updateCurrentStep={this.updateCurrentStep}
+                    updateCurrentStep={updateCurrentStep}
                 />
 
             </div>
@@ -52,7 +52,7 @@ function BuildMode({ stepIndex, elfStyles, updateElfStyles, updateCurrentStep })
                     styles={elfStyles}
                 />
                 <Card
-                    updateCurrentStep={this.updateCurrentStep}
+                    updateCurrentStep={updateCurrentStep}
                 />
 
             </div>
@@ -67,26 +67,27 @@ function BuildMode({ stepIndex, elfStyles, updateElfStyles, updateCurrentStep })
                 />
                 <Share
                     stepIndex={stepIndex}
-                    updateCurrentStep={this.updateCurrentStep}
+                    updateCurrentStep={updateCurrentStep}
+                />
+
+            </div>
+        )
+    } else {
+        return (
+            <div className="container">
+                <Elf
+                    elfStyles={elfStyles}
+                />
+                <CodeTable
+                    stepIndex={stepIndex}
+                    updateStyles={updateElfStyles}
+                    updateCurrentStep={updateCurrentStep}
+                    elfStyles={elfStyles}
                 />
 
             </div>
         )
     }
-    return (
-        <div className="container">
-            <Elf
-                elfStyles={elfStyles}
-            />
-            <CodeTable
-                stepIndex={stepIndex}
-                updateStyles={updateElfStyles}
-                updateCurrentStep={updateCurrentStep}
-                elfStyles={elfStyles}
-            />
-
-        </div>
-    )
 }
 
 export default BuildMode;

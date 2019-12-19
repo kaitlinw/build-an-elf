@@ -23,6 +23,10 @@ h3 {
   font-size: 30px;
 }
 
+h2 {
+	font-size: 25px;
+  }
+
 p {
   font-size: 30px;
 }
@@ -82,12 +86,13 @@ a {
 }
 
 .btn-2 {
-	background: #cb4e4e;
+	background: #C90D2F;
 	color: #fff;
-	box-shadow: 0 6px #ab3c3c;
+	box-shadow: 0 6px rgb(227, 52, 84);
 	-webkit-transition: none;
 	-moz-transition: none;
 	transition: none;
+	border-bottom: 2px solid rgb(252, 106, 133);
 }
 
 .btn-2g {
@@ -95,11 +100,14 @@ a {
 }
 
 .btn-2g:hover {
-	box-shadow: 0 4px #ab3c3c;
+	box-shadow: 0 4px #C90D2F;
 	top: 2px;
+	border-color: rgb(252, 106, 133);
+	color: white;
+
 }
 
 .btn-2g:active {
-	box-shadow: 0 0 #ab3c3c;
+	box-shadow: 0 0 rgb(227, 52, 84);
 	top: 6px;
 }

@@ -1,7 +1,7 @@
 import React from 'react';
 import './CodeTable.css';
 import toHtmlDashCase from './helpers.js';
-import { steps } from './styleData';
+import { steps, styleData } from './styleData';
 import CheckPoint from './Checkpoint';
 
 export default function CodeTable({ stepIndex, updateStyles, elfStyles, updateCurrentStep }) {
@@ -16,7 +16,7 @@ export default function CodeTable({ stepIndex, updateStyles, elfStyles, updateCu
     return (
         <div className="CodeTable">
             <div className="headers">
-                <h1>Code Table</h1>
+                <h1 className="code-workshop">Santa's Code Workshop</h1>
                 <h2>Now let's create my {currentStep}!</h2>
             </div>
 
@@ -27,7 +27,7 @@ export default function CodeTable({ stepIndex, updateStyles, elfStyles, updateCu
                         <p key={i}>
                             {styleName}:
                             <input className={styleName} onChange={(event) => updateStyles(event.target.className, event.target.value)} placeholder={defaultStyles[styleNamesCamelCase[i]]}
-                                defaultValue={actualStyles[styleNamesCamelCase[i]]}
+                                defaultValue={actualStyles[i]}
                                 type='text' />;
                                 
                         </p>

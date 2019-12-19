@@ -3,4 +3,27 @@
     width: 50vw;
     text-align: center;
     padding-top: 50px;
+    width: 700px;
+
+}
+
+.how-to-play {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding-top: 50px;
+    text-align: center;
+}
+
+.how-to-play p {
+    max-width: 50vw;
+    color: white;
+    font-weight: bold;
+}
+
+#to-p {
+    margin: 0;
+    padding: 0;
+    color: white;
+    font-weight: bold;
 }
