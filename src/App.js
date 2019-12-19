@@ -66,7 +66,6 @@ class App extends React.Component {
     const { stepIndex } = this.state
     let nextStepIndex = stepIndex + direction
     nextStepIndex = nextStepIndex || stepIndex
-
     this.setState({ stepIndex: nextStepIndex })
   }
 
@@ -101,15 +100,33 @@ class App extends React.Component {
           />
         } />
 
+        <Route path='/completed' exact render={() =>
+          <Completed
+            elfStyles={elfStyles}
+            updateCurrentStep={this.updateCurrentStep}
+
+          />
+        } />
+
         <Route path='/instructions' exact component={HowToPlay} />
 
         <Route path='/about' exact component={About} />
-        <Route path='/completed' exact component={Completed} />
-        <Route path='/share' exact component={Share} />
+        {/* <Route path='/completed' exact component={Completed} /> */}
+
+        <Route path='/share' exact render={() =>
+          <Share
+            elfStyles={elfStyles}
+            updateCurrentStep={this.updateCurrentStep}
+
+          />
+        } />
+        {/* <Route path='/share' exact component={Share} /> */}
+
         <Route path='/card' exact render={() =>
           <Card
             elfStyles={elfStyles}
             updateCurrentStep={this.updateCurrentStep}
+
           />
         } />
       </div>

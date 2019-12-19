@@ -269,12 +269,13 @@ export var styleData = {
             borderRadius: ''
         }
     },
-    'completed-elf': {
+    'checkpoint-6': {
         exclamation: "I'm ready to go!",
         section: "arms",
         message: "Check me out! Wow I look good.",
         nextStepMessage: "Alright, time to put me into a Christmas card so you can show me off to your friends and family!"
     },
+
     'build-card': {
         name: "",
         yourMessage: "",

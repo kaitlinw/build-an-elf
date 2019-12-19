@@ -2,6 +2,7 @@ import React from 'react';
 import './BuildCard.css';
 import Elf from './Elf.js';
 import Snowfall from 'react-snowfall';
+import { Link } from 'react-router-dom';
 
 export default function Card({ elfStyles, updateCurrentStep }) {
 
@@ -28,8 +29,8 @@ export default function Card({ elfStyles, updateCurrentStep }) {
             </div>
             <div className="buttons">
                 <button onClick={() => updateCurrentStep(-1)} className="back btn btn-2 btn-2g">Back</button>
-                <button onClick={() => updateCurrentStep(1)} className="next btn btn-2 btn-2g">Next</button>
-            </div>
+                <Link to="/Share" ><button className="next btn btn-2 btn-2g">Next</button></Link>
+            </div >
 
         </div >
 

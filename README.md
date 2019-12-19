@@ -1,4 +1,6 @@
 # Build An Elf!
+Build an elf [here!](https://concerned-farmer.surge.sh)
+
 
 A build an elf game for kids to learn how to code with basic CSS. (Can also be used by adults!)
 
@@ -17,6 +19,17 @@ A build an elf game for kids to learn how to code with basic CSS. (Can also be u
 - SnowFall [SnowFall](https://github.com/cahilfoley/react-snowfall)
 
 - Lodash CloneDeep
+
+
+##  To be improved
+- The final steps of the process - creating the xmas card and sharing it with friends.
+- Fixing the back button.
+- Fixing the local storage.
+
+- css2canvas will be used to capture the xmas card.
+- SendGrid to be used for the emailing of card function.
+
+
 
 ## React
 

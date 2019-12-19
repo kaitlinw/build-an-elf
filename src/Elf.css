@@ -9,7 +9,7 @@
     align-items: center;
     justify-content: center;
     width: 750px;
-    height: 750px;
+    min-height: 750px;
     background-color: darkslateblue;
     border-radius: 50em;
     margin-left: 40px;

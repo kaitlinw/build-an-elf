@@ -12,64 +12,41 @@ import { Switch, Route, Link } from 'react-router-dom';
 
 function BuildMode({ stepIndex, elfStyles, updateElfStyles, updateCurrentStep }) {
     let currentStep = steps[stepIndex]
-
     if (currentStep.includes('checkpoint')) {
         return (
             <div className="container">
                 <Elf
                     elfStyles={elfStyles}
-
                 />
                 <CheckPoint
                     stepIndex={stepIndex}
                     updateCurrentStep={updateCurrentStep}
                     elfStyles={elfStyles}
                 />
-
             </div>
-
         )
-    }
-
-    if (currentStep === 'completed-elf') {
+    } else if (currentStep == 'card') {
         return (
             <div className="container">
                 <Elf
-                    className="Elf"
-                    styles={elfStyles}
-                />
-                <Completed
-                    updateCurrentStep={updateCurrentStep}
-                />
-
-            </div>
-        )
-    } else if (currentStep === 'card') {
-        return (
-            <div className="container">
-                <Elf
-                    className="Elf"
                     styles={elfStyles}
                 />
                 <Card
                     updateCurrentStep={updateCurrentStep}
                 />
-
             </div>
 
         )
-    } else if (currentStep === 'share') {
+    } else if (currentStep == 'share') {
         return (
             <div className="container">
                 <Elf
-                    className="Elf"
                     styles={elfStyles}
                 />
                 <Share
                     stepIndex={stepIndex}
                     updateCurrentStep={updateCurrentStep}
                 />
-
             </div>
         )
     } else {
@@ -84,7 +61,6 @@ function BuildMode({ stepIndex, elfStyles, updateElfStyles, updateCurrentStep })
                     updateCurrentStep={updateCurrentStep}
                     elfStyles={elfStyles}
                 />
-
             </div>
         )
     }
