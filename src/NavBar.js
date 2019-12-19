@@ -10,7 +10,12 @@ export default function NavBar() {
                         <Link to="/home">Home</Link>
                     </li>
                     <li>
-                        <Link to="/build">Start</Link>
+                        <Link to={{
+                            pathname: "/build", state: {
+                                currentStep: "head"
+                            }
+                        }} > Start</Link>
+
                     </li>
                     <li>
                         <Link to="/instructions">How To Play</Link>

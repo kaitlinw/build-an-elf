@@ -4,7 +4,7 @@ import './Share.css';
 export default function Share() {
 
     return (
-        <h1>Hooray!</h1>
+        <h1>Share your elf!</h1>
     )
 
 

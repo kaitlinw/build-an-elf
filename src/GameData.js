@@ -1,4 +1,8 @@
-var StyleData = {
+var steps = ['head', 'head-checkpoint', 'eye', 'pupil', 'nose', 'mouth', 'face-checkpoint', 'body', 'belt', 'buckle', 'body-checkpoint', 'leg', 'feet', 'legs-checkpoint', 'arm', 'left-arm', 'right-arm', 'hand', 'arms-checkpoint', 'hair', 'hat-head', 'pom-pom4', 'hat-band', 'completed-elf', 'make-card', 'share']
+
+var cardData = {}
+
+var styleData = {
     'head': {
         default: {
             backgroundColor: 'orange',
@@ -245,5 +249,6 @@ var StyleData = {
 
 }
 
-export default StyleData
+export default styleData;
+export { styleData, steps, cardData };
 

@@ -1,3 +1,7 @@
+nav {
+    position: fixed;
+    width: 100vw;
+}
 ul {
     display: flex;
     flex-direction: row;

@@ -6,7 +6,7 @@ export default function Home() {
 
 
     return (
-        <div>
+        <div className="home-page">
             <h1>Let's Build An Elf!</h1>
             <Link className="btn btn-2 btn-2g" to="/build">Let's start!</Link>
         </div>
