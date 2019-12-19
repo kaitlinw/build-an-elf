@@ -13,12 +13,12 @@ export default function Card({ elfStyles, updateCurrentStep }) {
                 <Snowfall />
             </div>
             <div className="row">
-                <div className="elf">
+                {/* <div className="elf">
                     <Elf
                         elfStyles={elfStyles}
 
                     />
-                </div>
+                </div> */}
                 <div className="card-message">
                     <h1>Merry Christmas!</h1>
                     <p>&lt;h1&gt;Dear {<input placeholder="name" type="text" />},&lt;/h1&gt;</p>
