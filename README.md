@@ -3,7 +3,7 @@ Build an elf [here!](https://concerned-farmer.surge.sh)
 
 Completely built in React, this was my first React Project build in less that a week.
 
-I decided to make a fun game in light of Christmas Approaching that made it simple for kids to learn coding...and maybe even adults too!
+I decided to make a fun game in light of Christmas approaching that made it simple for kids to learn coding...and maybe even adults too!
 
 
 ## About
