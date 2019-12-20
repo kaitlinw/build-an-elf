@@ -26,9 +26,13 @@ A build an elf game for kids to learn how to code with basic CSS. (Can also be u
 <img src="./public/buildbody.png"
     alt="build body screen"
     height="400" />
+        <img src="./public/completed-elf.png"
+    alt="xmas card"
+    height="400" />
 <img src="./public/card.png"
     alt="xmas card"
     height="400" />
+
 
 Please also see the build an elf presentation!
 
