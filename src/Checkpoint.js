@@ -5,9 +5,7 @@ import { steps } from './styleData.js';
 export default function CheckPoint({ stepIndex, elfStyles, updateCurrentStep }) {
 
     let currentStep = steps[stepIndex]
-    console.log("look here 1")
     console.log(elfStyles)
-    console.log("look here 2")
 
     return (
         <div className="check-point">
